@@ -110,6 +110,6 @@ We would like to express our sincere gratitude to the following individuals and 
 
 - **[Aldrin Ocampo](https://facebook.com/profile.php?id=100025197528273)** and **[Angelo Torreon](https://facebook.com/profile.php?id=100094912447822)**: For their encouraging advices.
 
-Your knowledges, guidance, and support have been invaluable throughout the development process. We appreciate your commitment to excellence and your willingness to share your knowledge.
+Your guidance, and support have been invaluable throughout the development process. We appreciate your commitment to excellence and your willingness to share your knowledge.
 
 Thank you for being part of this journey and making our project better with your contributions!
