@@ -6,29 +6,28 @@ Welcome to the CDM IT-ELEC-SIA Final Project repository for Group 7! In this col
 
 ### Project Description
 
-[Provide a concise and informative description of your project. Highlight its purpose, features, and any unique aspects that set it apart.]
-
 ### Group 7 Members:
 
 #### Tutungan, Jameel U.
 - **Role:** Backend/Frontend Developer, Programmer [🧰]
 - [GitHub Profile](https://github.com/SSL-ACTX)
+- [Facebook Profile](https://facebook.com/seuriin)
 
 #### Cruz, Adrian Vine A.
 - **Role:** System Analyst
-- [Facebook Profile]()
+- [Facebook Profile](https://facebook.com/adrianvine.cruz)
 
 #### Dianito, Eugene
 - **Role:** System Analyst, Group Leader [⭐]
-- [Facebook Profile]()
+- [Facebook Profile](https://facebook.com/gray.forest.39)
 
 #### Muring Jr., Dindo T.
 - **Role:** Frontend Developer [🖼️]
-- [Facebook Profile]()
+- [Facebook Profile](https://facebook.com/dindo.muring.16)
 
 #### Evangelista, Jerico
 - **Role:** Frontend Developer [🖼️]
-- [Facebook Profile]()
+- [Facebook Profile](https://facebook.com/jerico.evangelista.180)
 
 #### Cleofe, John Lorenz
 - **Role:** Contributor [🙍‍♂️]
@@ -50,11 +49,8 @@ This project is licensed under the [LICENSE NAME] - see the [LICENSE.md](LICENSE
 
 We would like to express our sincere gratitude to the following individuals and organizations who have contributed to the success of the CDM IT-ELEC-SIA Final Project:
 
-- [Aldrin Ocampo]: [For his encouraging advices.]
-- [Angelo Torreon]: [For his help in this project.]
+- **Aldrin Ocampo** and **Angelo Torreon**: For their encouraging advices.
 
-Your expertise, guidance, and support have been invaluable throughout the development process. We appreciate your commitment to excellence and your willingness to share your knowledge.
-
-A special thanks to all our friends, colleagues, and community members who provided feedback and encouragement during the project. Your insights have played a crucial role in shaping the final outcome.
+Your knowledges, guidance, and support have been invaluable throughout the development process. We appreciate your commitment to excellence and your willingness to share your knowledge.
 
 Thank you for being part of this journey and making our project better with your contributions!
