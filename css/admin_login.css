@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+	background-image: url(https://i.ibb.co/tpqYKB6/The-Colegio-de-Montalban-Seal-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-blend-mode: screen;
+    background-position: fixed; 
+    background-color: rgb(238, 238, 238);   
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-image: url(https://i.pinimg.com/originals/90/5d/14/905d1444462dac827ec86e08715c7a17.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-position: center;
+    top: 25%;
+    position: fixed;
+    left: 40%;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 300px;
+    display: block;
+}
+
+h2 {
+    font-family: 'Product Sans', sans-serif;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-family: 'Product Sans', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+.tlg {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}

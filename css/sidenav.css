@@ -1,0 +1,126 @@
+body {
+	background-image: url(https://i.ibb.co/tpqYKB6/The-Colegio-de-Montalban-Seal-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-blend-mode: screen;
+    background-position: fixed;
+}
+
+.sidenav {
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111111c7;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav h1 {
+    font-family: 'Product Sans', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.sidenav a {
+    font-family: 'Product Sans', sans-serif;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb(192, 192, 192);
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+    background-color: #cacaca59;
+    transform: scale(1.10);
+    border-radius: 45px;
+}
+
+.main {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    color: #fefffe;
+}
+
+#logout {
+    position: fixed;
+    margin: 360px 0 0 40px;
+}
+
+#content-container {
+    display: absolute;
+    margin: 5% 10% auto 28%;
+    animation: fade .5s ease-out;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+.content-container {
+    animation: fade .5s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        width: 0;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #111111c7;
+        overflow-x: hidden;
+        padding-top: 20px;
+        z-index: 1;
+    }
+
+    .sidenav.open {
+        width: 190px;
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 6px;
+        left: 10px;
+        font-size: 20px;
+        background-color: #111111c7;
+        color: white;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+}
+

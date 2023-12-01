@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(https://i.ibb.co/tpqYKB6/The-Colegio-de-Montalban-Seal-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-position: center;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fdfdfd52;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+.profile-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+#student-image {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 39%);
+}
+
+#welcome-heading {
+    font-family: 'Product Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.stinfo {
+    color: #555;
+}
+
+.grades-container {
+    flex: 1;
+}
+
+.semester-container {
+    margin-top: 20px;
+}
+
+.semester-heading {
+    font-family: 'Product Sans', sans-serif;
+    background-color: #838383;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    border-radius: 9px 9px 0 0;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table-header {
+    font-family: 'Product Sans', sans-serif;
+    background-color: #8383839c;
+    color: #fff;
+    padding: 8px;
+}
+
+.subject-cell,
+.grade-cell {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logout-link {
+    font-family: 'Product Sans', sans-serif;
+    display: inline-block;
+    margin-top: 210px;
+    color: #006cd9;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+}

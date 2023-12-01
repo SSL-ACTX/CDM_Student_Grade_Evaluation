@@ -1,40 +1,53 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $student_id = isset($_POST['student_id']) ? $_POST['student_id'] : '';
-    $name = isset($_POST['name']) ? $_POST['name'] : '';
-    $course = isset($_POST['course']) ? $_POST['course'] : '';
-    $email = isset($_POST['email']) ? $_POST['email'] : '';
+error_reporting(E_ERROR | E_WARNING);
 
-    $student_id = filter_var($student_id, FILTER_SANITIZE_STRING);
-    $name = filter_var($name, FILTER_SANITIZE_STRING);
-    $course = filter_var($course, FILTER_SANITIZE_STRING);
-    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $fields = ['student_id', 'name', 'course', 'email'];
+    $data = [];
+
+    foreach ($fields as $field) {
+        $data[$field] = filter_input(INPUT_POST, $field, FILTER_SANITIZE_STRING);
+        if (empty($data[$field])) {
+            die("Invalid input. Please fill in all required fields.");
+        }
+    }
+
+    $email = filter_var($data['email'], FILTER_SANITIZE_EMAIL);
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die("Invalid email address.");
+    }
+
+    $target_dir = "uploads/";
+    $target_file = $target_dir . basename($_FILES["student_picture"]["name"]);
+
+    if (!empty($_FILES["student_picture"]["name"])) {
+        if (!move_uploaded_file($_FILES["student_picture"]["tmp_name"], $target_file)) {
+            die("Sorry, there's an error uploading your file. :D");
+        }
+        $studentPictureValue = "'$target_file'";
+    } else {
+        $studentPictureValue = "NULL";
+    }
 
     require_once('./db/config.php');
 
-    $check_query = "SELECT * FROM students WHERE student_id='$student_id'";
+    $check_query = "SELECT * FROM students WHERE student_id='{$data['student_id']}'";
     $check_result = $conn->query($check_query);
 
-    if ($check_result) {
-        if ($check_result->num_rows > 0) {
-            echo "Student ID already exists. Please use a different one.";
-        } else {
-            $insert_query = "INSERT INTO students (student_id, name, course, email) VALUES ('$student_id', '$name', '$course', '$email')";
+    if ($check_result && $check_result->num_rows > 0) {
+        die("Student ID already exists. Use a different one.");
+    }
 
-            if ($conn->query($insert_query) === TRUE) {
-                echo "Registration successful. You can now log in.";
-            } else {
-                echo "Registration failed. Please try again.";
-            }
-        }
+    $insert_query = "INSERT INTO students (student_id, name, course, email, student_picture) VALUES ('{$data['student_id']}', '{$data['name']}', '{$data['course']}', '$email', $studentPictureValue)";
+
+    if ($conn->query($insert_query)) {
+        header('Location: index.html');
     } else {
-        echo "Database Error: " . $conn->error;
+        header('Location: register.html');
     }
 
     $conn->close();
 } else {
-    echo "Invalid form submission.";
+    die("Invalid.");
 }
 ?>
-
-<a href="index.php">Already registered? Login</a>

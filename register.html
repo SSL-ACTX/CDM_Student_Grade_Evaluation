@@ -3,29 +3,52 @@
 
 <head>
     <title>Registration</title>
+    <link rel="stylesheet" href="./css/user_register.css">
+    <link href="https://fonts.cdnfonts.com/css/br-shape" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/product-sans" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sulphur-point" rel="stylesheet">
 </head>
 
 <body>
-    <h2>Registration Form</h2>
-    <form action="register.php" method="post">
-        <label for="student_id">Student ID:</label>
-        <input type="text" id="student_id" name="student_id" required><br><br>
-
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="course">Course:</label>
-        <input type="text" id="course" name="course" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-
-        <input type="submit" value="Register">
-        
-    </form>
+    <div class="main-title">
+        <h2>Welcome to CDM Student Grade Evaluation System Registration Form!</h2>
+    </div>
+    <div class="logo-cont">
+        <img src="https://i.ibb.co/XDbHNz6/MONTALBAN-LOGO-removebg-preview.png" alt="Bayan ng Montalban" title="Bayan ng Montalban">
+        <img src="https://i.ibb.co/0Bkq2WG/The-Colegio-de-Montalban-Seal-removebg-preview.png" alt="Colegio de Montalban" title="Colegio de Montalban">
+    </div>
+    <div class="main">
+        <h2 id="regtitle">Registration Form</h2>
+        <form action="register.php" method="post" enctype="multipart/form-data">
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required><br><br>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="student_picture">Student Picture:</label>
+            <input type="file" id="student_picture" name="student_picture" accept="image/*"><br><br>
+    
+            <input type="submit" value="Register">
+            <br>
+            <a class='login-diag' href="index.html">Already a student? Login</a>
+        </form>
+    </div>
+    
+    <div class="vision-container">
+        <h2>Mission</h2>
+        <p>Colegio De Montalban continuously aims for excellence in transforming individuals into responsible , productive , and globally competitive citizens.</p>
+        <p id="spacer"><hr></p>
+        <h2>Vision</h2>
+        <p>Nurture students to become value-oriented and competitive professionals who can contribute their expertise to the community.</p>
+    </div>
+   
 </body>
 
 </html>

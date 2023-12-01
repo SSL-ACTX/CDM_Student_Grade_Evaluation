@@ -1,0 +1,218 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://i.ibb.co/MC3hMR6/g3-Kj-r-Cpn5-N3-3u8q-JJBq-8u-M5ja8-Vhm0o3e6rg-HFFVBhv-RHLg-YPr3-OVZDskrh-HVAFb1en2rt00c-Mg-YOtb-As5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    background-image: url(https://i.ibb.co/tpqYKB6/The-Colegio-de-Montalban-Seal-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-position: center;
+    top: 18%;
+    position: fixed;
+    left: 40%;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 300px;
+    display: inline-block;
+}
+
+.main-title {
+    font-family: 'Sulphur Point', sans-serif;
+    text-align: center;
+    margin-top: 80px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#regtitle {
+    font-family: 'Sulphur Point', sans-serif;
+    position: relative;
+    text-align: center;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+label {
+	  font-family: 'Product Sans Light', sans-serif;
+    display: block;
+    margin-bottom: 4px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    margin: 0 0 0 100px;
+    width: 80px;
+    padding: 8px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	border-radius: 12px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+	border-radius: 12px;
+}
+
+.login-diag {
+	margin-left: 50px;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes growS {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
+
+form {
+    animation: fadeIn 2s ease-out;
+    animation: growS .5s ease-in;
+
+}
+
+.logo-cont {
+    position: absolute;
+    top: 0;
+    left: 83%;
+    z-index: 1;
+    padding: 20px;
+}
+
+.logo-cont img {
+    width: 180px;
+    display: block;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .logo-cont {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        width: 90%;
+    }
+
+    .logo-cont {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes growS {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
+
+.main {
+    animation: fadeIn 2s ease-out;
+    animation: growS .5s ease-in;
+
+}
+
+@keyframes growFromLeft {
+    from {
+      transform: scaleX(0);
+      transform-origin: left;
+    }
+    to {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+}
+.vision-container {
+    text-align: center;
+    font-family: 'Product Sans', sans-serif;
+    height: 490px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: #fff;
+    padding: 20px;
+    border-radius: 0 12px 12px 0;
+    animation: growFromLeft 1s ease-out;
+}
+
+.vision-container p {
+    font-family: 'Product Sans Thin', sans-serif;
+}
+
+.vision-container h2 {
+    margin-top: 70px;
+    padding-bottom: 10px;
+}
+
+#spacer {
+    margin: 75px 0 20px 0;
+}
