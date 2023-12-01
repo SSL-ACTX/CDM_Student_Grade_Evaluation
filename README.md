@@ -62,29 +62,28 @@ Ensure that you have the following software installed on your machine:
    Open a terminal or command prompt and clone the project repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/your-username/CDM_IT-ELEC-SIA_FINAL_PROJECT.git
+   git clone https://github.com/SSL-ACTX/CDM_Student_Grade_Evaluation.git
    ```
-
-   Replace `your-username` with your GitHub username.
-
+   
 2. **Move to Project Directory:**
    Navigate to the project directory using the `cd` command:
 
    ```bash
-   cd CDM_IT-ELEC-SIA_FINAL_PROJECT
+   cd CDM_Student_Grade_Evaluation
    ```
 
 3. **Run with a Web Server:**
-   If you have a local web server installed, simply move the project folder to the server's root directory, and access it through your browser. For example, if you are using XAMPP, move the project to the `htdocs` folder and access it at `http://localhost/CDM_IT-ELEC-SIA_FINAL_PROJECT`.
+   If you have a local web server installed, simply move the project folder to the server's root directory, and access it through your browser. For example, if you are using XAMPP, move the project to the `htdocs` folder and access it at `http://localhost/CDM_Student_Grade_Evaluation`.
 
 4. **Open in Browser:**
    Open your web browser and enter the following URL:
 
    ```
-   http://localhost/CDM_IT-ELEC-SIA_FINAL_PROJECT
+   http://localhost/CDM_Student_Grade_Evaluation
    ```
-
+   
    Adjust the URL based on your server configuration.
+      ex. ``` http://localhost/CDM_Student_Grade_Evaluation/index.html ```
 
 ### Usage
 
@@ -92,7 +91,7 @@ Ensure that you have the following software installed on your machine:
   - Use the provided student credentials to log in and access your grades. (You can register if you want)
  
 - **Student Dashboard:**
--  Access the dashboard for students to view and track their academic performance.
+  - Access the dashboard for students to view and track their academic performance.
   
 - **Admin Panel:**
   - Access the admin panel using the admin credentials to manage student records, update grades.
@@ -107,7 +106,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### Acknowledgements and Special Thanks
 
-We would like to express our sincere gratitude to the following individuals and organizations who have contributed to the success of the CDM IT-ELEC-SIA Final Project:
+We would like to express our sincere gratitude to the following individuals and organizations who have contributed to the success of the CDM_Student_Grade_Evaluation:
 
 - **[Aldrin Ocampo](https://facebook.com/profile.php?id=100025197528273)** and **[Angelo Torreon](https://facebook.com/profile.php?id=100094912447822)**: For their encouraging advices.
 
