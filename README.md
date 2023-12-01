@@ -13,7 +13,7 @@ Our Student Grade Evaluation system offers the following key features:
 
 **Admin Panel:** A dedicated admin panel for educators to manage student grades. This panel streamlines the grading process, making it more efficient for the admin.
 
-**Grade Updates:** Easy-to-use interfaces for teachers to input and update grades, ensuring that the latest academic information is always available to students.
+**Grade Updates:** Easy-to-use interfaces for the admin to input and update grades, ensuring that the latest academic information is always available to students.
 
 **Accessibility:** A user-friendly design that ensures accessibility for all users, making it easy for students and educators to navigate the system.
 
