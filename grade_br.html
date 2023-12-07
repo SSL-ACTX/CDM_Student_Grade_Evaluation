@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade br</title>
+</head>
+<body>
+    <h2>Grade br</h2>
+    <form action="grade_br.php" method="post">
+        <label for="quiz_scores">Enter QUIZZES scores (comma-separated): </label>
+        <input type="text" name="quiz_scores" required><br>
+
+        <label for="class_standing_scores">Enter CLASS STANDING scores (comma-separated): </label>
+        <input type="text" name="class_standing_scores" required><br>
+
+        <label for="midterm_lecture_exam">Enter Midterm Lecture Exam score: </label>
+        <input type="text" name="midterm_lecture_exam" required><br>
+
+        <label for="machine_problem_scores">Enter Machine Problem scores (comma-separated): </label>
+        <input type="text" name="machine_problem_scores" required><br>
+
+        <label for="class_standing_scores_midterm">Enter CLASS STANDING scores for Midterm (comma-separated): </label>
+        <input type="text" name="class_standing_scores_midterm" required><br>
+
+        <label for="midterm_lab_exam">Enter Midterm Laboratory Exam score: </label>
+        <input type="text" name="midterm_lab_exam" required><br>
+
+        <!-- finals -->
+        <label for="quiz_score_final">Enter QUIZZES scores (comma-separated): </label>
+        <input type="text" name="quiz_scores_final" required><br>
+
+        <label for="class_standing_scores_final">Enter CLASS STANDING scores for Final (comma-separated): </label>
+        <input type="text" name="class_standing_scores_final" required><br>
+
+        <label for="final_lecture_exam">Enter Final Lecture Exam score: </label>
+        <input type="text" name="final_lecture_exam" required><br>
+
+        <label for="machine_problem_scores_final">Enter Machine Problem scores for Final (comma-separated): </label>
+        <input type="text" name="machine_problem_scores_final" required><br>
+
+        <label for="class_standing_scores_final2">Enter CLASS STANDING scores for Final (comma-separated): </label>
+        <input type="text" name="class_standing_scores_final2" required><br>
+
+        <label for="final_lab_exam">Enter Final Laboratory Exam score: </label>
+        <input type="text" name="final_lab_exam" required><br>
+
+        <input type="submit" value="Calculate Grades">
+    </form>
+</body>
+</html>
