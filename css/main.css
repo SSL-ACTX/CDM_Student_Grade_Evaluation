@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(https://i.ibb.co/MC3hMR6/g3-Kj-r-Cpn5-N3-3u8q-JJBq-8u-M5ja8-Vhm0o3e6rg-HFFVBhv-RHLg-YPr3-OVZDskrh-HVAFb1en2rt00c-Mg-YOtb-As5.jpg);
+    background-image: url("./img/cdmbg.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ a {
 }
 
 .main {
-    background-image: url(https://i.ibb.co/tpqYKB6/The-Colegio-de-Montalban-Seal-removebg-preview.png);
+	background-image: url("./img/cdm.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: screen;
@@ -159,6 +159,54 @@ a {
     }
 }
 
+@media (max-width: 1600px) {
+    .vision-container {
+        position: absolute;
+        top: 28%;
+        width: 20%;
+        height: 50%;
+        font-size: 2.2vh;
+    }
+    .main-title {
+        position: relative;
+        margin-top: 28px;
+    }
+    .logo-cont {
+        display: flex;
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    .logo-cont img {
+        width: 100px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1710px) {
+    .vision-container {
+        position: absolute;
+        top: 28%;
+        width: 20%;
+        height: 50%;
+        font-size: 2.2vh;
+    }
+    .main-title {
+        position: relative;
+        margin-top: 28px;
+    }
+    .logo-cont {
+        display: flex;
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    .logo-cont img {
+        width: 100px;
+        padding: 5px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .main {
         left: 50%;
@@ -168,18 +216,6 @@ a {
     .logo-cont {
         left: 50%;
         transform: translateX(-50%);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .main {
-        width: 90%;
-    }
-
-    .logo-cont {
-        left: 0;
-        right: 0;
-        margin: auto;
     }
 }
 
@@ -250,39 +286,6 @@ footer {
     color: white;
 }
 
-/* Mobile View */
-@media screen and (max-width: 600px) {
-    .vision-container {
-        display: none;
-        transition: display 0.5s ease;
-    }
-
-    .main {
-        position: absolute;
-        max-width: 80%;
-    }
-
-    .logo-cont {
-        display: flex;
-        position: absolute;
-        margin-left: 66%;
-    }
-
-    .logo-cont img {
-        width: 80px;
-        padding: 5px;
-    }
-
-    .main-title {
-        position: absolute;
-        top: -6%;
-        font-size: 12px;
-        text-align: left;
-        text-wrap: balance;
-        padding: 5px 5px 0 10px;
-    }
-}
-
 /** header **/
 #header {
     background: #ffffffd6;
@@ -309,11 +312,174 @@ footer {
     margin-left: 20px;
 }
 
-@media (max-width: 992px) {
-    #header .logo {
-        font-size: 28px;
+@media (max-width: 720px) {
+    #header .logo a {
+        font-size: 34px;
+        display: flex;
+    }
+    .logo-cont {
+        top: 2%;
+        left: 87%;
+    }
+    .main-title {
+        top: 3vh;
+    }
+    .vision-container {
+        display: none;
+    }
+    .main {
+        width: 60%;
+        max-height: auto;
+    }
+    label {
+        font-size: 23px;
+    }
+    #form-inp {
+        position: relative;
+        left: 10%;
+        padding: 9px;
+        border-radius: 16px;
+        width: 70%;
+    }
+    #submitbut {
+        margin-left: 27%;
+    
     }
 }
+
+@media (max-width: 720px) {
+    #header .logo a {
+        font-size: 29px;
+        display: flex;
+    }
+    .logo-cont {
+        top: 8%;
+        left: 85%;
+    }
+    .logo-cont img {
+        width: 90px;
+    }
+    .main-title {
+        display: none;
+    }
+    .vision-container {
+        display: none;
+    }
+    .main {
+        width: 50%;
+        max-height: auto;
+    }
+    label {
+        font-size: 17px;
+    }
+    #submitbut {
+        margin-left: 9%;
+    }
+    .m-form-title {
+        font-size: 3.9vh;
+    }
+}
+
+@media (max-width: 360px) {
+    #header .logo a {
+        font-size: 29px;
+        display: flex;
+    }
+    .logo-cont {
+        top: 16%;
+        left: 60%;
+    }
+    .logo-cont img {
+        width: 100px;
+    }
+    .main-title {
+        display: none;
+    }
+    .vision-container {
+        display: none;
+    }
+    .main {
+        width: 50%;
+        max-height: auto;
+    }
+    label {
+        font-size: 17px;
+    }
+    #submitbut {
+        margin-left: 9%;
+    }
+    .m-form-title {
+        font-size: 3.9vh;
+    }
+}
+
+@media (max-width: 360px) {
+    #header .logo a {
+        font-size: 29px;
+        display: flex;
+    }
+    .logo-cont {
+        top: 16%;
+        left: 60%;
+    }
+    .logo-cont img {
+        width: 100px;
+    }
+    .main-title {
+        display: none;
+    }
+    .vision-container {
+        display: none;
+    }
+    .main {
+        width: 50%;
+        max-height: auto;
+    }
+    label {
+        font-size: 17px;
+    }
+    #submitbut {
+        margin-left: 9%;
+    }
+    .m-form-title {
+        font-size: 3.9vh;
+    }
+}
+
+@media (max-width: 393px) {
+    #header .logo a {
+        font-size: 29px;
+        display: flex;
+    }
+    .logo-cont {
+        top: 16%;
+        left: 60%;
+    }
+    .logo-cont img {
+        width: 100px;
+    }
+    .main-title {
+        display: none;
+    }
+    .vision-container {
+        display: none;
+    }
+    .main {
+        width: 50%;
+        max-height: auto;
+    }
+    label {
+        font-size: 17px;
+    }
+    #submitbut {
+        margin-left: 9%;
+    }
+    .m-form-title {
+        font-size: 3.9vh;
+    }
+}
+
+
 
 /* Desktop Navigation */
 .nav-menu ul {

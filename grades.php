@@ -50,10 +50,9 @@ error_reporting(E_ERROR | E_WARNING);
 
         $currentStudentId = null;
 
-        echo "<h2>Grades:</h2>";
+        echo "<h2>Grades</h2>";
 
         echo "<form method='post' id='searchForm'>";
-        echo "<label for='search'>Search by Student ID:</label>";
         echo "<input type='text' id='search' name='search' placeholder='Enter Student ID'>";
         echo "<input type='button' value='Search' onclick='performSearch()'>";
         echo "</form>";        

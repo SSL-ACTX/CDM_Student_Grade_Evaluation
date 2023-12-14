@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(https://i.ibb.co/MC3hMR6/g3-Kj-r-Cpn5-N3-3u8q-JJBq-8u-M5ja8-Vhm0o3e6rg-HFFVBhv-RHLg-YPr3-OVZDskrh-HVAFb1en2rt00c-Mg-YOtb-As5.jpg);
+    background-image: url("./img/cdmbg.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ a {
 }
 
 .main {
-    background-image: url(https://i.ibb.co/tpqYKB6/The-Colegio-de-Montalban-Seal-removebg-preview.png);
+	background-image: url("./img/cdm.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: screen;
@@ -132,6 +132,62 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 1366px) {
+    .main {
+        position: absolute;
+        top: 10%;
+        margin: -34px 0 0 0;
+    }
+    .vision-container {
+        position: absolute;
+        top: 28%;
+        width: 20%;
+        height: 50%;
+        font-size: 2.2vh;
+    }
+    .main-title {
+        position: relative;
+        margin-top: 28px;
+    }
+    .logo-cont {
+        display: flex;
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    .logo-cont img {
+        width: 100px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .vision-container {
+        position: absolute;
+        top: 28%;
+        width: 20%;
+        height: 50%;
+        font-size: 2.2vh;
+    }
+    .main-title {
+        position: relative;
+        margin-top: 28px;
+    }
+    .logo-cont {
+        display: flex;
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    .logo-cont img {
+        width: 100px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 1710px) {
+    .main {
+        top: 20%;
+    }
     .vision-container {
         position: absolute;
         top: 28%;
@@ -158,7 +214,12 @@ input[type="submit"]:hover {
 @media screen and (max-width: 768px) {
     .main {
         left: 50%;
+        top: 24%;
         transform: translateX(-50%);
+    }
+    #header .logo a {
+        font-size: 28px;
+        display: block;
     }
 
     .logo-cont {
@@ -167,9 +228,51 @@ input[type="submit"]:hover {
     }
 }
 
+
+@media screen and (max-width: 625px) {
+    .main {
+        left: 50%;
+        top: 28%;
+        transform: translateX(-50%);
+    }
+    #header .logo a {
+        font-size: 28px;
+        display: block;
+    }
+
+    .logo-cont {
+        top: 5%;
+        left: 85%;
+    }
+    .vision-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .main {
+        left: 50%;
+        top: 25%;
+        transform: translateX(-50%);
+    }
+    #header .logo a {
+        font-size: 28px;
+        display: block;
+    }
+
+    .logo-cont {
+        top: -1%;
+        left: 15%;
+    }
+    .vision-container {
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 480px) {
     .main {
-        width: 90%;
+        width: 80%;
     }
 
     .logo-cont {
@@ -404,6 +507,7 @@ footer {
     right: 15px;
 }
 
+/* 1366 X 768 SC RES LMAO */
 @media (max-width: 1366px) {
     .nav-menu .drop-down .drop-down ul {
         left: -90%;

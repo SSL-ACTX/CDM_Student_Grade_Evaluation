@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-	background-image: url(https://i.ibb.co/tpqYKB6/The-Colegio-de-Montalban-Seal-removebg-preview.png);
+	background-image: url("./img/cdm.png");
     background-repeat: no-repeat;
     background-size: 50%;
     background-blend-mode: screen;
@@ -14,13 +14,12 @@ body {
 }
 
 .login-container {
-    background-image: url(https://i.pinimg.com/originals/90/5d/14/905d1444462dac827ec86e08715c7a17.gif);
+    background-image: url("./img/admgif.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: screen;
     background-position: center;
     top: 25%;
-    position: fixed;
     left: 40%;
     background-color: rgb(238, 238, 238);
     padding: 20px;
@@ -81,4 +80,17 @@ p {
 
 a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-size: 130%;
+        background-position-x: 10%;
+        background-position-x: 42%;
+    }
+    .container {
+        max-width: 100%;
+        margin: 4% auto;
+        padding: 10px;
+    }
 }

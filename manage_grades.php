@@ -118,9 +118,8 @@ error_reporting(E_ERROR | E_WARNING);
             $student_result = executeQuery($conn, $student_query);
         }
         ?>
-        <h2>Student List:</h2>
-        <form method="post">
-            <label for="search_query">Search by Student ID:</label>
+        <h2>Manage Grades</h2>
+        <form class="search-form" method="post">
             <input type="text" id="search_query" name="search_query" placeholder="Enter Student ID">
             <input type="submit" name="search" value="Search">
         </form>
@@ -190,12 +189,12 @@ error_reporting(E_ERROR | E_WARNING);
                     <td>
                         <form method='post'>
                             <input type='hidden' name='add_grade_student_id' value='<?= $student['student_id']; ?>'>
-                            <label for='add_grade_subject'>Subject:</label>
-                            <input type='text' id='add_grade_subject' name='add_grade_subject' required>
-                            <label for='add_grade_grade'>Grade:</label>
-                            <input type='text' id='add_grade_grade' name='add_grade_grade' required>
-                            <label for='add_grade_semester'>Semester:</label>
-                            <input type='text' id='add_grade_semester' name='add_grade_semester' required>
+                            <label for='add_grade_subject'>Subject:</label><br>
+                            <input type='text' id='add_grade_subject' name='add_grade_subject' required><br>
+                            <label for='add_grade_grade'>Grade:</label><br>
+                            <input type='text' id='add_grade_grade' name='add_grade_grade' required><br>
+                            <label for='add_grade_semester'>Semester:</label><br>
+                            <input type='text' id='add_grade_semester' name='add_grade_semester' required><br>
                             <input type='submit' name='add' value='Add Grade'>
                         </form>
                     </td>

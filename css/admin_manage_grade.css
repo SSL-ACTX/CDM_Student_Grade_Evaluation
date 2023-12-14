@@ -6,12 +6,13 @@ body {
 }
 
 .container {
-    width: 1060px;
+    max-width: 1060px;
+    margin: 5px auto auto 16%;
     background-color: #fff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-left: 20%;
+    position: relative;
 }
 
 h2 {
@@ -27,12 +28,13 @@ h2 {
 }
 
 table {
-    width: 10%;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
@@ -50,7 +52,71 @@ tr:hover {
     background-color: #f1f1f1;
 }
 
-/* optional */
+.search-form {
+    position: absolute;
+    top: 25px;
+    right: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin-left: 5px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin-top: 9px;
+}
+
+.search-form input[type="submit"] {
+    margin-left: 5px;
+}
+
+input[type="text"],
+select {
+    width: 40%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        max-width: 100%;
+        margin: 4% auto;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    table {
+        font-size: 14px;
+    }
+        
+    .search-form {
+        position: absolute;
+        left: 50%;
+        top: 20px;
+    }
+    
+    .search-form input[type="text"] {
+        width: 100%;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .sidenav {
         width: 0;
@@ -82,5 +148,23 @@ tr:hover {
         cursor: pointer;
         z-index: 2;
     }
-}
 
+    input[type="text"],
+    select {
+        width: 38%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+}

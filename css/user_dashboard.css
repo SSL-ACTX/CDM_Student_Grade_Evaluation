@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(https://i.ibb.co/tpqYKB6/The-Colegio-de-Montalban-Seal-removebg-preview.png);
+	background-image: url("./img/cdm.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: screen;
@@ -11,14 +11,15 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 50px auto;
-    background-color: #fdfdfd52;
+    background-color: #d3d3d340;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(10px);
     display: flex;
+    border: 3px #adadad solid;
 }
 
 .profile-container {
@@ -60,8 +61,11 @@ body {
 
 .semester-heading {
     font-family: 'Product Sans', sans-serif;
-    background-color: #838383;
-    color: #fff;
+    background-color: #ffffff91;
+    color: #333;
+    font-size: 20px;
+    border: 2px #0000004d solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin: 0;
     border-radius: 9px 9px 0 0;
@@ -71,32 +75,104 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    border: 2px #0000004d solid;
 }
 
 .table-header {
     font-family: 'Product Sans', sans-serif;
-    background-color: #8383839c;
-    color: #fff;
+    background-color: #a6a6a6b5;
+    color: #ffffff;
     padding: 8px;
+    border: 2px #0000004d solid;
 }
 
 .subject-cell,
 .grade-cell {
     text-align: center;
     padding: 8px;
-    border-bottom: 1px solid #ddd;
+    background-color: #ffffff6e;
+    border: 2px #0000004d solid;
 }
 
 .logout-link {
     font-family: 'Product Sans', sans-serif;
-    display: inline-block;
-    margin-top: 210px;
+    position: fixed;
+    top: 90%;
     color: #006cd9;
     text-decoration: none;
     font-weight: bold;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .logout-link:hover {
     text-decoration: underline;
+}
+
+.grade-breakdown {
+    background-color: #ffffff73;
+    border-radius: 10px;
+    border: 2px #0000004d solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 10px auto auto 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    top: 9px;
+}
+
+.grade-breakdown h4 {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#gradesChart {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.gpa-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gpa-container h5 {
+    color: #555;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+#toggleGradeBreakdown {
+    position: fixed;
+    border-radius: 50% 50%;
+    border: 4px #e4e4e4 solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    height: 35px;
+    width: 35px;
+    right: 1%;
+    top: 5%;
+    background-color: #555;
+    color: white;
+    animation: fade .5s ease-out;
+    z-index: 5
+}
+
+#toggleGradeBreakdown:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }

@@ -50,9 +50,8 @@ error_reporting(E_ERROR | E_WARNING);
             $student_result = $conn->query($student_query);
         }
 
-        echo "<h2>Student List:</h2>";
+        echo "<h2>Student List</h2>";
         echo "<form method='post' id='searchForm'>";
-        echo "<label for='search'>Search by Student ID:</label>";
         echo "<input type='text' id='search' name='search' placeholder='Enter Student ID'>";
         echo "<input type='button' value='Search' onclick='perfSearch()'>";
         echo "</form>";  
@@ -63,7 +62,7 @@ error_reporting(E_ERROR | E_WARNING);
             echo "<td>".$row['student_id']."</td>";
             echo "<td>".$row['name']."</td>";
             echo "<td>".$row['course']."</td>";
-            echo "<td>".$row['email']."</td>";
+            echo "<td class='email-cell'>".$row['email']."</td>";
             echo "</tr>";
         }
         echo "</table>";
